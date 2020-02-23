@@ -12,7 +12,6 @@ class App extends Component {
   handleEnter = (e, index) => {
     if (index <= (this.inputFields.length - 2)) {
       if (e.key == 'Enter') {
-        console.log('inside condition')
         this[`input${index + 1}`].focus();
       }
     } else {
